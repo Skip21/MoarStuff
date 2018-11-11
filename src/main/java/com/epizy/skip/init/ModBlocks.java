@@ -20,6 +20,7 @@ public class ModBlocks {
     static Block basicBlock;
     static Block shardOre;
     static Block malachiteOre;
+    static Block malachiteBlock;
 
     public static void init() {
         basicBlock = new BlockBasic("basicBlock", Material.ROCK);
@@ -27,17 +28,18 @@ public class ModBlocks {
         shardOre.setHarvestLevel("pickaxe", 2);
         malachiteOre = new BlockOre("malachiteOre", Material.ROCK).setHardness(1.6f);
         malachiteOre.setHarvestLevel("pickaxe", 1);
+        malachiteBlock = new BlockBasic("malachiteBlock", Material.ROCK);
     }
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(basicBlock, shardOre, malachiteOre);
+        event.getRegistry().registerAll(basicBlock, shardOre, malachiteOre, malachiteBlock);
     }
 
     @SubscribeEvent
     public static void registerItemBlocks(RegistryEvent.Register<Item> event){
         event.getRegistry().registerAll(new ItemBlock(basicBlock).setRegistryName(basicBlock.getRegistryName()), new ItemBlock(shardOre).setRegistryName(shardOre.getRegistryName()),
-        new ItemBlock(malachiteOre).setRegistryName(malachiteOre.getRegistryName()));
+        new ItemBlock(malachiteOre).setRegistryName(malachiteOre.getRegistryName()), new ItemBlock(malachiteBlock).setRegistryName(malachiteBlock.getRegistryName()));
     }
 
     @SubscribeEvent
@@ -45,6 +47,7 @@ public class ModBlocks {
         registerRender(Item.getItemFromBlock(basicBlock));
         registerRender(Item.getItemFromBlock(shardOre));
         registerRender(Item.getItemFromBlock(malachiteOre));
+        registerRender(Item.getItemFromBlock(malachiteBlock));
     }
 
     public static void registerRender(Item item) {

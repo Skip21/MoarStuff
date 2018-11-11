@@ -2,6 +2,7 @@ package com.epizy.skip;
 
 import com.epizy.skip.init.ModBlocks;
 import com.epizy.skip.init.ModItems;
+import com.epizy.skip.init.ModRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.*;
 import net.minecraftforge.fml.common.event.*;
@@ -23,11 +24,14 @@ public class MoarStuff {
 
     @EventHandler
     public void init(FMLInitializationEvent event){
+
         System.out.println(Reference.MODID + ":init");
+        ModRecipes.init();
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event){
+
         System.out.println(Reference.MODID + ":postinit");
     }
 

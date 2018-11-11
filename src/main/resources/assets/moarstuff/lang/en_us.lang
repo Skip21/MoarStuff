@@ -1,0 +1,9 @@
+item.malachiteIngot.name=Copper Ingot
+item.basicStick.name=Shard Stick
+item.basicShard.name=Basic Shard
+
+
+tile.shardOre.name=Shard Ore
+tile.malachiteOre.name=Copper Ore
+tile.basicBlock.name=Basic Shard Block
+tile.malachiteBlock.name=Block of Copper
