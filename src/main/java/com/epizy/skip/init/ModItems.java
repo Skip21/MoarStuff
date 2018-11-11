@@ -12,19 +12,21 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
 public class ModItems {
 
-    static Item basicStick;
-    static Item basicShard;
-    static Item malachiteIngot;
+    public static Item basicStick;
+    public static Item basicShard;
+    public static Item malachiteIngot;
+    public static Item malachiteNugget;
 
     public static void init(){
         basicStick = new ItemBasic("basicStick");
         basicShard = new ItemBasic("basicShard");
         malachiteIngot = new ItemBasic("malachiteIngot");
+        malachiteNugget = new ItemBasic("malachiteNugget");
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
-        event.getRegistry().registerAll(basicStick, basicShard, malachiteIngot);
+        event.getRegistry().registerAll(basicStick, basicShard, malachiteIngot, malachiteNugget);
 
     }
 
@@ -33,6 +35,7 @@ public class ModItems {
         registerRender(basicStick);
         registerRender(basicShard);
         registerRender(malachiteIngot);
+        registerRender(malachiteNugget);
     }
 
     private static void registerRender(Item item){

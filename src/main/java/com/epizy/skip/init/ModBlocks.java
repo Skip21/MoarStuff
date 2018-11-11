@@ -17,10 +17,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = Reference.MODID)
 public class ModBlocks {
 
-    static Block basicBlock;
-    static Block shardOre;
-    static Block malachiteOre;
-    static Block malachiteBlock;
+    public static Block basicBlock;
+    public static Block shardOre;
+    public static Block malachiteOre;
+    public static Block malachiteBlock;
 
     public static void init() {
         basicBlock = new BlockBasic("basicBlock", Material.ROCK);
@@ -28,7 +28,7 @@ public class ModBlocks {
         shardOre.setHarvestLevel("pickaxe", 2);
         malachiteOre = new BlockOre("malachiteOre", Material.ROCK).setHardness(1.6f);
         malachiteOre.setHarvestLevel("pickaxe", 1);
-        malachiteBlock = new BlockBasic("malachiteBlock", Material.ROCK);
+        malachiteBlock = new BlockBasic("malachiteBlock", Material.ROCK).setHardness(1.6f);
     }
 
     @SubscribeEvent
