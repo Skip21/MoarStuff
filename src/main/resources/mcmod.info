@@ -1,0 +1,16 @@
+[
+{
+  "modid": "moarstuff",
+  "name": "Moar Stuff",
+  "description": "Even more stuff added to Minecraft",
+  "version": "alpha1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Skip_21"],
+  "credits": "Suppergerrie's tutorial and every modders i may have used the mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
