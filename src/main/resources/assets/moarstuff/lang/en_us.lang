@@ -1,6 +1,7 @@
 item.malachiteIngot.name=Copper Ingot
 item.basicStick.name=Shard Stick
 item.basicShard.name=Basic Shard
+item.malachiteNugget.name=Copper Nugget
 
 
 tile.shardOre.name=Shard Ore
