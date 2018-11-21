@@ -8,4 +8,4 @@ Check LICENSE.MD file
 None
 
 ### Contributors
-Non yet :(
+None yet :(
