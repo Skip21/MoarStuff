@@ -17,10 +17,10 @@ Steps to reproduce the bug:
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
 **Mods involved and Versions (do NOT use latest)**
  - Forge :
  - Moar Stuff :
  - [Additional mods]
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
