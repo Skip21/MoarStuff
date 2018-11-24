@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moarstuff:blocks/block_shard_basic"
+  }
+}

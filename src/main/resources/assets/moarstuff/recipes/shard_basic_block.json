@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"  ],
+  "key": {
+    "A": [
+      {
+        "item": "moarstuff:shard_basic",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "moarstuff:lock_shard_basic",
+    "data": 0
+  }
+}

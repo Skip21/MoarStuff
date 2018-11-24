@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "moarstuff:block_shard_basic",
+      "item": "moarstuff:ingot_copper",
       "data": 0
     }
   ],
   "result": {
-    "item": "moarstuff:shard_basic",
+    "item": "moarstuff:nugget_copper",
     "data": 0,
     "count": 9
   }
