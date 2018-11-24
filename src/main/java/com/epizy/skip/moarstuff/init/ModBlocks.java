@@ -33,7 +33,7 @@ public class ModBlocks {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(BLOCK_SHARD_BASIC, ORE_SHARD, ORE_COPPER, ORE_COPPER);
+        event.getRegistry().registerAll(BLOCK_SHARD_BASIC, ORE_SHARD, ORE_COPPER, BLOCK_COPPER);
     }
 
     @SubscribeEvent
