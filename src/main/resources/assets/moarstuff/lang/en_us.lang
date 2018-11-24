@@ -1,10 +1,21 @@
+itemGroup.tabMoarStuffBase=Moar Stuff
+
+
 item.ingot_copper.name=Copper Ingot
+item.ingot_lead.name=Lead Ingot
+
 item.stick_basic.name=Shard Stick
+
 item.shard_basic.name=Basic Shard
+
 item.nugget_copper.name=Copper Nugget
+item.nugget_lead.name=Lead Nugget
 
 
 tile.ore_shard.name=Shard Ore
 tile.ore_copper.name=Copper Ore
+tile.ore_lead.name=Lead Ore
+
 tile.block_shard_basic.name=Basic Shard Block
 tile.block_copper.name=Block of Copper
+tile.block_lead.name=Block of Lead
