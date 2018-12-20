@@ -14,10 +14,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
 public class ModItems {
 
-    public static final Item.ToolMaterial LEAD = EnumHelper.addToolMaterial("LEAD", 2, 600, 7.0f, 2.5f, 13);
-    public static final Item.ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 200, 6.5f, 2.0f, 13);
+    public static final Item.ToolMaterial LEADITEM = EnumHelper.addToolMaterial("leaditem", 2, 600, 7.0f, 2.5f, 13);
+    public static final Item.ToolMaterial COPPERITEM = EnumHelper.addToolMaterial("copperitem", 2, 200, 6.5f, 2.0f, 13);
 
-    public static final Item.ToolMaterial OMNILEAD = EnumHelper.addToolMaterial(LEAD.name(), LEAD.getHarvestLevel(), (LEAD.getMaxUses()*4), LEAD.getEfficiency(), LEAD.getAttackDamage(), LEAD.getEnchantability());
+    public static final Item.ToolMaterial OMNILEAD = EnumHelper.addToolMaterial("omni"+LEADITEM.name(), LEADITEM.getHarvestLevel(), (LEADITEM.getMaxUses()*4), LEADITEM.getEfficiency(), LEADITEM.getAttackDamage(), LEADITEM.getEnchantability());
+    public static final Item.ToolMaterial OMNICOPPER = EnumHelper.addToolMaterial("omni"+COPPERITEM.name(), COPPERITEM.getHarvestLevel(), (COPPERITEM.getMaxUses()*4), COPPERITEM.getEfficiency(), COPPERITEM.getAttackDamage(), COPPERITEM.getEnchantability());
 
     public static Item PICKAXE_LEAD;
     public static Item AXE_LEAD;
@@ -31,6 +32,7 @@ public class ModItems {
     public static Item HOE_COPPER;
     public static Item SHOVEL_COPPER;
     public static Item SWORD_COPPER;*/
+    public static Item OMNI_COPPER;
 
 
     public static Item STICK_BASIC;
@@ -45,12 +47,14 @@ public class ModItems {
 
     public static void init(){
 
-        PICKAXE_LEAD = new CustomPickaxe("pickaxe_lead", LEAD);
-        HOE_LEAD = new CustomHoe("hoe_lead", LEAD);
-        SWORD_LEAD = new CustomSword("sword_lead", LEAD);
-        AXE_LEAD = new CustomAxe("axe_lead", LEAD, 8.0f, -2.9f);
-        SHOVEL_LEAD = new CustomShovel("shovel_lead", LEAD);
+        PICKAXE_LEAD = new CustomPickaxe("pickaxe_lead", LEADITEM);
+        HOE_LEAD = new CustomHoe("hoe_lead", LEADITEM);
+        SWORD_LEAD = new CustomSword("sword_lead", LEADITEM);
+        AXE_LEAD = new CustomAxe("axe_lead", LEADITEM, 8.0f, -2.9f);
+        SHOVEL_LEAD = new CustomShovel("shovel_lead", LEADITEM);
         OMNI_LEAD = new Omnitool("omni_lead", OMNILEAD);
+
+        OMNI_COPPER = new Omnitool("omni_copper", OMNICOPPER);
 
 
         STICK_BASIC = new ItemBasic("stick_basic");
@@ -68,7 +72,7 @@ public class ModItems {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
         event.getRegistry().registerAll(STICK_BASIC, SHARD_BASIC, INGOT_COPPER, NUGGET_COPPER, INGOT_LEAD, NUGGET_LEAD,
-        PICKAXE_LEAD, SHOVEL_LEAD, HOE_LEAD, SWORD_LEAD, AXE_LEAD, OMNI_LEAD);
+        PICKAXE_LEAD, SHOVEL_LEAD, HOE_LEAD, SWORD_LEAD, AXE_LEAD, OMNI_LEAD, OMNI_COPPER);
 
     }
 
@@ -90,6 +94,8 @@ public class ModItems {
         registerRender(SWORD_LEAD);
         registerRender(AXE_LEAD);
         registerRender(OMNI_LEAD);
+
+        registerRender(OMNI_COPPER);
     }
 
     private static void registerRender(Item item){

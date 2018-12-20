@@ -1,5 +1,6 @@
 package com.epizy.skip.moarstuff.items.tools;
 
+import com.epizy.skip.moarstuff.MoarStuff;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
@@ -28,6 +29,8 @@ public class Omnitool extends ItemPickaxe{
         super(material);
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
+
+        setCreativeTab(MoarStuff.tabMoarStuffTools);
 
     }
 

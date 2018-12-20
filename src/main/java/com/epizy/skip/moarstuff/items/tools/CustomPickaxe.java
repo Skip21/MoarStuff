@@ -1,5 +1,6 @@
 package com.epizy.skip.moarstuff.items.tools;
 
+import com.epizy.skip.moarstuff.MoarStuff;
 import net.minecraft.item.ItemPickaxe;
 
 public class CustomPickaxe extends ItemPickaxe {
@@ -9,6 +10,8 @@ public class CustomPickaxe extends ItemPickaxe {
         super(material);
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
+
+        setCreativeTab(MoarStuff.tabMoarStuffTools);
 
     }
 }
