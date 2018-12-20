@@ -1,6 +1,7 @@
 package com.epizy.skip.moarstuff;
 
 import com.epizy.skip.moarstuff.gen.OreGen;
+import com.epizy.skip.moarstuff.init.ModArmor;
 import com.epizy.skip.moarstuff.init.ModBlocks;
 import com.epizy.skip.moarstuff.init.ModItems;
 import com.epizy.skip.moarstuff.init.ModRecipes;
@@ -30,11 +31,19 @@ public class MoarStuff {
         }
     }).setBackgroundImageName("item_search.png");
 
+    public static final CreativeTabs tabMoarStuffTools = (new CreativeTabs("tabMoarStuffTools") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ModItems.OMNI_COPPER);
+        }
+    });
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         System.out.println(Reference.MODID + ":preinit");
         ModItems.init();
         ModBlocks.init();
+        ModArmor.init();
     }
 
     @EventHandler

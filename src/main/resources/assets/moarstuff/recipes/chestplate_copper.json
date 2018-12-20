@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "AAA",
+    "AAA"  ],
+  "key": {
+    "A": [
+      {
+        "item": "moarstuff:ingot_copper",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "moarstuff:chestplate_copper",
+    "data": 0
+  }
+}

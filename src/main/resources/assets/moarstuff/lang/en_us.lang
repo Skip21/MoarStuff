@@ -1,5 +1,11 @@
 itemGroup.tabMoarStuffBase=Moar Stuff
+itemGroup.tabMoarStuffTools=Moar Stuff's Tools
 
+
+item.moarstuffhelmet_copper.name=Copper Helmet
+item.moarstuffchestplate_copper.name=Copper Chestplate
+item.moarstuffleggings_copper.name=Copper Leggings
+item.moarstuffboots_copper.name=Copper Boots
 
 item.ingot_copper.name=Copper Ingot
 item.ingot_lead.name=Lead Ingot
@@ -10,6 +16,20 @@ item.shard_basic.name=Basic Shard
 
 item.nugget_copper.name=Copper Nugget
 item.nugget_lead.name=Lead Nugget
+
+
+item.omni_lead.name=Lead Omnitool
+item.omni_copper.name=Copper Omnitool
+item.pickaxe_lead.name=Lead Pickaxe
+item.pickaxe_copper.name=Copper Pickaxe
+item.axe_lead.name=Lead Axe
+item.axe_copper.name=Copper Axe
+item.sword_lead.name=Lead Sword
+item.sword_copper.name=Copper Sword
+item.hoe_lead.name=Lead Hoe
+item.hoe_Copper.name=Copper Hoe
+item.shovel_lead.name=Lead Shovel
+item.shovel_copper.name=Copper Shovel
 
 
 tile.ore_shard.name=Shard Ore
