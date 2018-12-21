@@ -17,8 +17,12 @@ import java.util.Random;
 
 public class OreGen implements IWorldGenerator {
 
+    //Local variables
+
     WorldGenerator oreGen;
     int minHeight, maxHeight, spawnChance, dimension;
+
+    //COnstructors
 
     public OreGen(Block blockToGen, int blockCount, int minHeight, int maxHeight, int spawnChance){
         this(blockToGen, blockCount, minHeight, maxHeight, spawnChance, 0, BlockMatcher.forBlock(Blocks.STONE));
@@ -28,6 +32,8 @@ public class OreGen implements IWorldGenerator {
         this(blockToGen, blockCount, minHeight, maxHeight, spawnChance, dimension, BlockMatcher.forBlock(Blocks.STONE));
     }
 
+    //Main constructor
+
     public OreGen(Block blockToGen, int blockAmount, int minHeight, int maxHeight, int spawnChance, int dimension, Predicate<IBlockState> blockToReplace){
         oreGen = new WorldGenMinable(blockToGen.getDefaultState(), blockAmount, blockToReplace);
         this.minHeight = minHeight;
@@ -35,6 +41,8 @@ public class OreGen implements IWorldGenerator {
         this.spawnChance = spawnChance;
         this.dimension = dimension;
     }
+
+    //Generation setting
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
@@ -45,7 +53,7 @@ public class OreGen implements IWorldGenerator {
 
     }
 
-
+    //Checking if generation is in world bounds and setting minimum and maximum height
 
     private void runGenerator(WorldGenerator generator, World worldIn, Random random, int chunkX, int chunkZ, int spawnChance, int minHeight, int maxHeight){
 

@@ -1,6 +1,6 @@
 package com.epizy.skip.moarstuff.blocks;
 
-import com.epizy.skip.moarstuff.MoarStuff;
+import com.epizy.skip.moarstuff.CustomTabs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -11,7 +11,7 @@ public class BlockBasic extends Block {
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        setCreativeTab(MoarStuff.tabMoarStuffBase);
+        setCreativeTab(CustomTabs.tabMoarStuffBase);
     }
 
 }

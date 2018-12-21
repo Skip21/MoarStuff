@@ -17,12 +17,27 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
 public class ModArmor {
 
+    //Materials declaration
+
     public static ItemArmor.ArmorMaterial COPPERARMOR = EnumHelper.addArmorMaterial("copperamor", Reference.MODID+":copper", 200, new int[] {2,6,5,2}, 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0f);
+
+    //Armors declaration
 
     public static ItemArmor HELMET_COPPER;
     public static ItemArmor CHESTPLATE_COPPER;
     public static ItemArmor LEGGINGS_COPPER;
     public static ItemArmor BOOTS_COPPER;
+
+    /*Initializing armors
+
+    Paramaters :
+
+        Material
+        Layer to use
+        Slot it can be worn
+        Registry/Unlocalized name
+
+     */
 
     public static void init(){
 
@@ -33,12 +48,16 @@ public class ModArmor {
 
     }
 
+    //Registering Armors
+
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
 
         event.getRegistry().registerAll(HELMET_COPPER, CHESTPLATE_COPPER, LEGGINGS_COPPER, BOOTS_COPPER);
 
     }
+
+    //Registering armors' renders
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event){
@@ -53,7 +72,7 @@ public class ModArmor {
     private static void registerRender(Item item){
 
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-        
+
     }
 
 }

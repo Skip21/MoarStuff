@@ -1,6 +1,6 @@
 package com.epizy.skip.moarstuff.items.tools;
 
-import com.epizy.skip.moarstuff.MoarStuff;
+import com.epizy.skip.moarstuff.CustomTabs;
 import net.minecraft.item.ItemAxe;
 
 public class CustomAxe extends ItemAxe {
@@ -10,6 +10,6 @@ public class CustomAxe extends ItemAxe {
         this.setUnlocalizedName(name);
 
 
-        setCreativeTab(MoarStuff.tabMoarStuffTools);
+        setCreativeTab(CustomTabs.tabMoarStuffTools);
     }
 }

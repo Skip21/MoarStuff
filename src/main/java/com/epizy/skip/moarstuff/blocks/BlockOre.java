@@ -8,9 +8,13 @@ import java.util.Random;
 
 public class BlockOre extends BlockBasic {
 
+    //Stuff to drop and amount declaration as local variables
+
     Item toDrop;
     int minAmount;
     int maxAmount;
+
+    //Constructors
 
     public BlockOre(String name, Material material){
         this(name, material, null, 1, 1);
@@ -24,6 +28,8 @@ public class BlockOre extends BlockBasic {
         this(name, material, toDrop, dropAmount, dropAmount);
     }
 
+    //Main constructor
+
     public BlockOre(String name, Material material, Item toDrop, int minAmount, int maxAmount){
         super(name, material);
         this.toDrop = toDrop;
@@ -31,10 +37,14 @@ public class BlockOre extends BlockBasic {
         this.maxAmount = maxAmount;
     }
 
+    //Checking if items should drop himself or something else
+
     @Override
     public Item getItemDropped(IBlockState state, Random random, int fortune){
         return toDrop==null?Item.getItemFromBlock(this):toDrop;
     }
+
+    //Setting amount of items to drop
 
     @Override
     public int quantityDropped(Random random)    {
@@ -45,6 +55,8 @@ public class BlockOre extends BlockBasic {
         }
         return this.minAmount + random.nextInt(this.maxAmount - this.minAmount + 1);
     }
+
+    //Setting amount to drop when mined with fortune
 
     @Override
     public int quantityDroppedWithBonus(int fortune, Random random){

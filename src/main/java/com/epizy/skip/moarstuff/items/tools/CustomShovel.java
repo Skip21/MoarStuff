@@ -1,6 +1,6 @@
 package com.epizy.skip.moarstuff.items.tools;
 
-import com.epizy.skip.moarstuff.MoarStuff;
+import com.epizy.skip.moarstuff.CustomTabs;
 import net.minecraft.item.ItemSpade;
 
 public class CustomShovel extends ItemSpade {
@@ -10,7 +10,7 @@ public class CustomShovel extends ItemSpade {
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
 
-        setCreativeTab(MoarStuff.tabMoarStuffTools);
+        setCreativeTab(CustomTabs.tabMoarStuffTools);
     }
 
 }

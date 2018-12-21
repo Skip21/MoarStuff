@@ -1,6 +1,6 @@
 package com.epizy.skip.moarstuff.items;
 
-import com.epizy.skip.moarstuff.MoarStuff;
+import com.epizy.skip.moarstuff.CustomTabs;
 import com.epizy.skip.moarstuff.Reference;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
@@ -14,6 +14,6 @@ public class ItemModArmor extends ItemArmor {
         setRegistryName(name);
         setMaxStackSize(1);
 
-        setCreativeTab(MoarStuff.tabMoarStuffTools);
+        setCreativeTab(CustomTabs.tabMoarStuffTools);
     }
 }

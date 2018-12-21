@@ -14,8 +14,12 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+
+//DON'T FORGET THAT LINE RIGHT BELOW
 @Mod.EventBusSubscriber(modid = Reference.MODID)
 public class ModBlocks {
+
+    //Blocks declaration
 
     public static Block BLOCK_SHARD_BASIC;
     public static Block BLOCK_COPPER;
@@ -24,6 +28,9 @@ public class ModBlocks {
     public static Block ORE_SHARD;
     public static Block ORE_COPPER;
     public static Block ORE_LEAD;
+
+
+    //Blocks initialization
 
     public static void init() {
         BLOCK_SHARD_BASIC = new BlockBasic("block_shard_basic", Material.ROCK).setHardness(1.6f);
@@ -36,12 +43,18 @@ public class ModBlocks {
         ORE_COPPER.setHarvestLevel("pickaxe", 1);
         ORE_LEAD = new BlockOre("ore_lead", Material.ROCK).setHardness(1.8f);
         ORE_LEAD.setHarvestLevel("pickaxe", 1);
+
+
     }
+
+    //Blocks registering
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(BLOCK_SHARD_BASIC, ORE_SHARD, ORE_COPPER, BLOCK_COPPER, ORE_LEAD, BLOCK_LEAD);
     }
+
+    //Blocks' icon registering
 
     @SubscribeEvent
     public static void registerItemBlocks(RegistryEvent.Register<Item> event){
@@ -49,6 +62,8 @@ public class ModBlocks {
         new ItemBlock(ORE_COPPER).setRegistryName(ORE_COPPER.getRegistryName()), new ItemBlock(BLOCK_COPPER).setRegistryName(BLOCK_COPPER.getRegistryName()), new ItemBlock(ORE_LEAD).setRegistryName(ORE_LEAD.getRegistryName()),
         new ItemBlock(BLOCK_LEAD).setRegistryName(BLOCK_LEAD.getRegistryName()));
     }
+
+    //Blocks' model registering
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event) {

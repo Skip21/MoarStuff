@@ -1,6 +1,7 @@
 package com.epizy.skip.moarstuff.items;
 
-import com.epizy.skip.moarstuff.MoarStuff;
+
+import com.epizy.skip.moarstuff.CustomTabs;
 import net.minecraft.item.Item;
 
 public class ItemBasic extends Item {
@@ -9,7 +10,7 @@ public class ItemBasic extends Item {
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        setCreativeTab(MoarStuff.tabMoarStuffBase);
+        setCreativeTab(CustomTabs.tabMoarStuffBase);
     }
 
 }

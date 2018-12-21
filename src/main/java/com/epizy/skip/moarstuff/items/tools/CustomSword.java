@@ -1,6 +1,6 @@
 package com.epizy.skip.moarstuff.items.tools;
 
-import com.epizy.skip.moarstuff.MoarStuff;
+import com.epizy.skip.moarstuff.CustomTabs;
 import net.minecraft.item.ItemSword;
 
 public class CustomSword extends ItemSword {
@@ -10,6 +10,6 @@ public class CustomSword extends ItemSword {
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
 
-        setCreativeTab(MoarStuff.tabMoarStuffTools);
+        setCreativeTab(CustomTabs.tabMoarStuffTools);
     }
 }
