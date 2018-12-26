@@ -7,13 +7,13 @@
   "key": {
     "A": [
       {
-        "item": "moarstuff:nugget_copper",
-        "data": 0
+        "type": "forge:ore_dict",
+        "ore": "nuggetCopper"
       }
     ]
   },
   "result": {
     "item": "moarstuff:ingot_copper",
-    "data": 0
+    "meta": 0
   }
 }

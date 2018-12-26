@@ -40,11 +40,11 @@ public class ModTools {
     public static Item SWORD_LEAD;
     public static Item OMNI_LEAD;
 
-    /*public static Item PICKAXE_COPPER;
+    public static Item PICKAXE_COPPER;
     public static Item AXE_COPPER;
     public static Item HOE_COPPER;
     public static Item SHOVEL_COPPER;
-    public static Item SWORD_COPPER;*/
+    public static Item SWORD_COPPER;
     public static Item OMNI_COPPER;
 
     //Initializing tools
@@ -58,6 +58,11 @@ public class ModTools {
         SHOVEL_LEAD = new CustomShovel("shovel_lead", LEADITEM);
         OMNI_LEAD = new Omnitool("omni_lead", OMNILEAD);
 
+        PICKAXE_COPPER = new CustomPickaxe("pickaxe_copper", COPPERITEM);
+        HOE_COPPER = new CustomHoe("hoe_copper", COPPERITEM);
+        SWORD_COPPER = new CustomSword("sword_copper", COPPERITEM);
+        AXE_COPPER = new CustomAxe("axe_copper", COPPERITEM, 8.1f, -2.9f);
+        SHOVEL_COPPER = new CustomShovel("shovel_copper", COPPERITEM);
         OMNI_COPPER = new Omnitool("omni_copper", OMNICOPPER);
 
     }
@@ -66,7 +71,8 @@ public class ModTools {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
-        event.getRegistry().registerAll(PICKAXE_LEAD, SHOVEL_LEAD, HOE_LEAD, SWORD_LEAD, AXE_LEAD, OMNI_LEAD, OMNI_COPPER);
+        event.getRegistry().registerAll(PICKAXE_LEAD, HOE_LEAD, SWORD_LEAD, AXE_LEAD, SHOVEL_LEAD, OMNI_LEAD,
+                PICKAXE_COPPER, HOE_COPPER, SWORD_COPPER, AXE_COPPER, SHOVEL_COPPER, OMNI_COPPER);
     }
 
     // Registering tools' render
@@ -75,12 +81,17 @@ public class ModTools {
     public static void registerRenders(ModelRegistryEvent event){
 
         registerRender(PICKAXE_LEAD);
-        registerRender(SHOVEL_LEAD);
         registerRender(HOE_LEAD);
         registerRender(SWORD_LEAD);
         registerRender(AXE_LEAD);
+        registerRender(SHOVEL_LEAD);
         registerRender(OMNI_LEAD);
 
+        registerRender(PICKAXE_COPPER);
+        registerRender(HOE_COPPER);
+        registerRender(SWORD_COPPER);
+        registerRender(AXE_COPPER);
+        registerRender(SHOVEL_COPPER);
         registerRender(OMNI_COPPER);
 
     }
