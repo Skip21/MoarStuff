@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y":  { "model": "moarstuff:log_hazel" },
+    "axis=z":   { "model": "moarstuff:log_hazel", "x": 90 },
+    "axis=x":   { "model": "moarstuff:log_hazel", "x": 90, "y": 90 },
+    "axis=none": { "model": "moarstuff:bark_hazel" }
+  }
+}

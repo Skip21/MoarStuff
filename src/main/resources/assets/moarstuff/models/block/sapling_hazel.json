@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "moarstuff:blocks/sapling_hazel"
+  }
+}

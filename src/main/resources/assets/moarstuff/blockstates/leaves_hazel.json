@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "check_decay=true,decayable=true": { "model": "moarstuff:leaves_hazel" },
+    "check_decay=false,decayable=true": { "model": "moarstuff:leaves_hazel" },
+    "check_decay=true,decayable=false": { "model": "moarstuff:leaves_hazel" },
+    "check_decay=false,decayable=false": { "model": "moarstuff:leaves_hazel" }
+  }
+}
