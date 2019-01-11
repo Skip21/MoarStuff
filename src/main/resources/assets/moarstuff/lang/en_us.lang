@@ -39,3 +39,8 @@ tile.ore_lead.name=Lead Ore
 tile.block_shard_basic.name=Basic Shard Block
 tile.block_copper.name=Block of Copper
 tile.block_lead.name=Block of Lead
+
+tile.log_hazel.name=Hazel Wood
+tile.plank_hazel.name=Hazel Planks
+tile.sapling_hazel.name=Hazel Sapling
+tile.leaves_hazel.name=Hazel Leaves

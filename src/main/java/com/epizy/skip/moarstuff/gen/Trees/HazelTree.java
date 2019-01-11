@@ -17,7 +17,7 @@ public class HazelTree extends WorldGenAbstractTree {
 
     private IBlockState blockStateWood = ModBlocks.LOG_HAZEL.getDefaultState();
     private IBlockState blockStateLeaves = ModBlocks.LEAVES_HAZEL.getDefaultState().withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-    private final int minTreeHeight = 6;
+    private final int minTreeHeight = 7;
 
     public HazelTree(){
 

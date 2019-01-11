@@ -18,6 +18,11 @@ public class OreDictionaryHandler {
         OreDictionary.registerOre("blockLead", ModBlocks.BLOCK_LEAD);
         OreDictionary.registerOre("oreLead", ModBlocks.ORE_LEAD);
 
+        OreDictionary.registerOre("treeLeaves", ModBlocks.LEAVES_HAZEL);
+        OreDictionary.registerOre("plankWood", ModBlocks.PLANK_HAZEL);
+        OreDictionary.registerOre("logWood", ModBlocks.LOG_HAZEL);
+        OreDictionary.registerOre("treeSapling", ModBlocks.SAPLING_HAZEL);
+
     }
 
 }

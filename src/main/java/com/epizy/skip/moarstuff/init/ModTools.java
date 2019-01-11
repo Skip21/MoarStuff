@@ -56,14 +56,14 @@ public class ModTools {
         SWORD_LEAD = new CustomSword("sword_lead", LEADITEM);
         AXE_LEAD = new CustomAxe("axe_lead", LEADITEM, 8.0f, -2.9f);
         SHOVEL_LEAD = new CustomShovel("shovel_lead", LEADITEM);
-        OMNI_LEAD = new Omnitool("omni_lead", OMNILEAD);
+        OMNI_LEAD = new Omnitool("omni_lead", OMNILEAD, 8.5f, -2.4f);
 
         PICKAXE_COPPER = new CustomPickaxe("pickaxe_copper", COPPERITEM);
         HOE_COPPER = new CustomHoe("hoe_copper", COPPERITEM);
         SWORD_COPPER = new CustomSword("sword_copper", COPPERITEM);
         AXE_COPPER = new CustomAxe("axe_copper", COPPERITEM, 8.1f, -2.9f);
         SHOVEL_COPPER = new CustomShovel("shovel_copper", COPPERITEM);
-        OMNI_COPPER = new Omnitool("omni_copper", OMNICOPPER);
+        OMNI_COPPER = new Omnitool("omni_copper", OMNICOPPER, 8.6f, -2.4f);
 
     }
 
