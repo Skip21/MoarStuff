@@ -1,10 +1,8 @@
 package com.epizy.skip.moarstuff;
 
-import com.epizy.skip.moarstuff.blocks.BlockBasic;
 import com.epizy.skip.moarstuff.init.ModItems;
 import com.epizy.skip.moarstuff.init.ModTools;
 import com.epizy.skip.moarstuff.items.ItemBasic;
-import com.epizy.skip.moarstuff.items.ItemModArmor;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
